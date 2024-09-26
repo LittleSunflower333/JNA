@@ -21,10 +21,10 @@ public class JnaDemoController {
         try{
             Hivision_java_params hivision_java_params = JSONObject.parseObject(hivision_java_params_json, Hivision_java_params.class);
 //            Hivision_java_params hivision_java_params = new Hivision_java_params();
-//            hivision_java_params.setModel_path("E:\\workSpace\\JNAdemo\\src\\main\\resources\\model\\mnn_hivision_modnet.mnn");
-//            hivision_java_params.setImage_path("E:\\workSpace\\JNAdemo\\src\\main\\resources\\face_image\\Trump.jpg");
-//            hivision_java_params.setOut_path("E:\\workSpace\\JNAdemo\\src\\main\\resources\\target\\");
-//            hivision_java_params.setFace_model_path("E:\\workSpace\\JNAdemo\\src\\main\\resources\\model\\");
+//            hivision_java_params.setModel_path("src\\main\\resources\\model\\mnn_hivision_modnet.mnn");
+//            hivision_java_params.setImage_path("src\\main\\resources\\face_image\\Trump.jpg");
+//            hivision_java_params.setOut_path("src\\main\\resources\\target\\");
+//            hivision_java_params.setFace_model_path("src\\main\\resources\\model\\");
             HivisionIDphotosLibrary.INSTANCE.human_mating(hivision_java_params);
             return "success";
         }catch (Exception e){
@@ -38,10 +38,10 @@ public class JnaDemoController {
         try{
             Hivision_java_params hivision_java_params = JSONObject.parseObject(hivision_java_params_json, Hivision_java_params.class);
 //            Hivision_java_params hivision_java_params = new Hivision_java_params();
-//            hivision_java_params.setModel_path("E:\\workSpace\\JNAdemo\\src\\main\\resources\\model\\mnn_hivision_modnet.mnn");
-//            hivision_java_params.setImage_path("E:\\workSpace\\JNAdemo\\src\\main\\resources\\face_image\\Trump.jpg");
-//            hivision_java_params.setOut_path("E:\\workSpace\\JNAdemo\\src\\main\\resources\\target\\");
-//            hivision_java_params.setFace_model_path("E:\\workSpace\\JNAdemo\\src\\main\\resources\\model\\");
+//            hivision_java_params.setModel_path("src\\main\\resources\\model\\mnn_hivision_modnet.mnn");
+//            hivision_java_params.setImage_path("src\\main\\resources\\face_image\\Trump.jpg");
+//            hivision_java_params.setOut_path("src\\main\\resources\\target\\");
+//            hivision_java_params.setFace_model_path("src\\main\\resources\\model\\");
             int i = HivisionIDphotosLibrary.INSTANCE.ID_photo(hivision_java_params,out_size_kb,layout_phot);
             if(i==1) {
                 return "success";
